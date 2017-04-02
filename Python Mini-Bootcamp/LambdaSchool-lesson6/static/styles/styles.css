@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+}
+
+.navbar {
+	height: 100px;
+	background: lightgray;
+}
+
+.footer {
+	height: 100px;
+	background: gray;
+}
+
+.main-content {
+	height: 600px;
+	background: lightblue;
+	width: 60%;
+	margin-left: 20%;
+}
+
+div {
+	background-color: red;
+	height: 50px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+}
+
+.detect-hover {
+	background: green;
+}
+
+.detect-hover: hover {
+	background: yellow;
+}
+
+p {
+	background: blue;
+	color: white;
+	border: 3px dotted black; or dashed or solid
+	text-align: center;
+}
+
+
+.social-media-icons {
+	display: flex;
+	justify-content: center;
+	padding-left: 0px;
+	margin-left: -15px;
+}
+
+.icon {
+	margin-left: 15px;
+	background: orange;
+	height: 50px;
+	width: 50px;
+	border-radius:  50%;
+	list-style: none;
+}

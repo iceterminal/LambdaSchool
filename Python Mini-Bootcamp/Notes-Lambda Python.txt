@@ -1,0 +1,180 @@
+NOTES from LAMBDA SCHOOL
+************************************************************************
+************************************************************************
+Lesson 1: How to write HTTP requests in Python
+
+Create virtual environment
+	virtualenv -p python3 venv (or venv1, venv2, etc.)
+	source venv/bin/activate (puts you into that virtual environment)
+
+Request line (request from browser for resource)
+
+Method
+Headers
+Data
+
+Method - resource - http_version
+GET /blog/post/1 (gets a resource)
+	GET /blog/post/1 HTTP/1.1 (use http version 1.1 to communicate)
+POST (create a resourse)
+DELETE (del a resource)
+PUT (edit a resource)
+
+headers
+	format = key : value
+		ex = Content-Type : JSON or Content-Type : HTML or Content-Type : plain-text
+
+Hello this is my first post
+
+--------EXAMPLES------
+Request
+--------------------
+GET /fruits HTTP/1.1
+
+Response
+--------------------
+HTTP/1.1/ 200 OK
+Content-Length: 24
+Content-Type: text/plain
+
+apples, orangese, bananas
+
+
+Request
+--------------------
+POST /signup/form HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+name=david&lastname=bach  (key=value&key=value)
+#### or ####
+POST /signup/form HTTP/1.1
+Content-Type: application/JSON
+{"name" : "david", "lastname" : "bach"}
+
+Response (Example)
+----------------------------
+HTTP/1.1 200 OK
+Date: Tue, 06 Feb 2017 18:30 GMT
+Content-Type: application/JSON
+Content-Length: 111 (size of response)
+{
+	"token": "90875ohsdfa"
+	"message": "Welcome to your new account."
+}
+
+************************************************************************
+************************************************************************
+Lesson 2: Routes in Python
+Flask server
+
+Requests in flask are called routes
+Start up the flask server process
+	# export FLASK_APP=flask_import.py  (filename of the start script like index.py)
+ 	# flask run
+
+Must have a directory named 'static' when using
+@app.route('/') # http://site.com/
+def index():
+	return 'Hello World!' (this returns the string)
+	return app.send_static_file ('home.html')  (this returns the file home.html in the 'static' subdir)
+
+Can also use "templates" by using it in beginning of script. Create a templates subdir & place files in there. This loads files from the /templates dir.
+	from flask import Flask, render_template
+then 
+	@app.route ('/')
+	def index():
+		return render_template('home.html')
+In this way, the home.html file is used as a template. Like static html files.
+************************************************************************
+************************************************************************
+Lesson 3: SQLite
+Some help at: http://pythoncentral.io/introduction-to-sqlite-in-python/
+
+import sqlite3
+
+Create db as file
+	db = sqlite3.connect('data/database.db') 
+After making changes, commit them to the db
+	db.commit()
+When done with the db, close it
+	db.close()
+Get a 'cursor object'
+	cursor=db.cursor()
+	cursor.execute('''CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT,phone TEXT, email TEXT unique, password TEXT)''')
+	db.commit()
+Drop a table:
+	cursor=db.cursor()
+	cursor.execute('''DROP TABLE users''')
+	db.commit()
+
+************************************************************************
+************************************************************************
+Lesson 4:
+Git & Github
+
+Fork the repo into your account first by clicking on the small fork button top right
+$git clone URL  #copies from github.com and the repository will download to your local computer. It will download it to the directory you run the command in.
+$git status  # Checks status of the git you're working on
+$git add 'filename' #add's the changed file(s) to a list to be read to commit to trunk
+$git commit -m "commit message such as added XXX to file XXX" #commits changes to trunk
+$git push origin master  # pushes changes back up to github (cloud)
+
+************************************************************************
+************************************************************************
+Lesson 5:
+
+In chrome browser, in the developer section (F12), check Disable cache.
+DOM document object model
+	
+************************************************************************
+************************************************************************
+Lesson 6:
+
+HTML with CSS
+A class will/can over ride a standard default style. (i.e. <p> or <div>)
+can set border with solid lines or dotted or dashed
+Padding
+Border
+Margin
+Line-height: can affect size of content
+text-alight: center
+id should only be used once on a page, use classes isntead
+Flexbox is awesome, except its not 100% suppored in IE11 but is in Edge
+	https://css-tricks.com/snippets/css/a-guide-to-flexbox
+	https://flexbox.io/
+	http://flexboxfroggy.com/
+
+************************************************************************
+************************************************************************
+Lesson 7:
+jQuery & ajax
+
+You can use jquery locally, or use a jquery CDN. A CDN is a internet location where jquery is located. So your web page will load faster.
+Using "$" at beginning references jquery i.e. $.ajax
+
+Import jquery script FIRST before others, as they are loaded in order. You cannot use jquery script before its imported/loaded.
+In the .js file, a $ sign is a variable name for jquery function
+
+
+************************************************************************
+************************************************************************
+Lesson 8:
+Bootstrap - HTML, CSS, and JS frameworks
+getbootstrap.com
+You can install it locally and access it, or use CDN.
+Make grids in css. Normal grid pattern is 12.
+Media breakpoint:
+	@media (min-width 992px)
+
+startbootstrap.com
+	cleanblog theme
+		some css written ontop of bootstrap
+github pages
+	Lets you push to your repo, it automatically reads it and displays it. Like a temporary web host.
+	githubname.github.io
+	create new repo called the same as the URL 
+		i.e. https://github.com/iceterminal/iceterminal.github.io
+
+wrapbootstrap.com has themes you can purchase with bootstrap
+
+Minifying - Takes your code (css like) and puts it all into 1 line.
+	Like styles.css would be styles-min.css and all the code would be in 1 line

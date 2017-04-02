@@ -1,0 +1,31 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+</head>
+<body id='body'>
+  <h1 class="header">My Pets</h1>
+
+<form id="new-pet-form" action="/new-pet" method="POST" onsubmit="return ValidateForm()">
+	Name:
+  <input id="name_input" name="name" />
+  <br>
+  Species:
+  <input id="species_input" name="species" />
+  <br>
+  Age:
+  <input id="age_input" name="age" />
+  <br>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+
+<a id="pets-list" href="/pets">Pets List</a>
+  <br> <br>
+  <input id='background_color'>
+  <button id='change_color'>Change Background Color</button>
+  <br> <br>
+
+  <button id='hide_all'>Hide Everything</button>
+  <br> <br>
+  <button id='hide_button'>Click me and I go away!</button>
+  
+<script src="/static/scripts/home.js"></script>
+</body>

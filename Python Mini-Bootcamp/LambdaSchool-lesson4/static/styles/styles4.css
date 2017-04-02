@@ -1,0 +1,15 @@
+body {
+	background: whitesmoke;
+}
+
+.header {
+	color: navy;
+}
+#movies {
+	color: gray;
+	text-decoration: overline;
+}
+#search {
+	color: grey;
+	text-decoration: underline;
+}

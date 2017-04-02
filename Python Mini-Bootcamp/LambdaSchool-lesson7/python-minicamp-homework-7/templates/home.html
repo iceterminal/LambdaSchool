@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <link rel= "stylesheet" type= "text/css" href= "/static/styles/styles.css">
+	</head>
+
+	<body>
+		<h1>My Posts</h1>
+
+		<h3>Add Post</h3>
+
+		<form action="new-post" method="POST">
+			Title:
+		  <input name="title" />
+		  Author:
+		  <input name="author" />
+		  Post:
+		  <input name="body" />
+		  Id:
+		  <input name="id" />
+		  <input type="submit" value="Submit" />
+		</form>
+
+		<a href="/posts">Post List</a>
+
+		<h2>Posts:</h2>
+
+		<ul id="post-list">
+			
+		</ul>
+
+		<script src="/static/scripts/script.js"></script>
+	</body>
+</html>

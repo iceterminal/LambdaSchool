@@ -1,0 +1,27 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/style/styles.css">
+</head>
+<body id='body'>
+	<h1 class="header"></h1>
+	<form action="/new_book" method="POST" onsubmit="return validateForm()">
+		Name:
+			<input id='name_input' name="name" /> <br>
+		Author:
+			<input id='author_input' name="author"><br>
+		Year Published:
+			<input id='year_published' name='year_published'><br>
+		Pages:
+			<input id='pages_input' name="pages"></input><br>
+
+	<input type='submit' value='Submit'></form><br>
+	</form>
+	
+	<a href="/books">My Books</a><br>
+
+	<input id='backgroundColor'>
+	<button id='changeColor'>Change Background Color</button>
+
+
+
+	<script src="/static/scripts/home.js"></script>
+</body>
