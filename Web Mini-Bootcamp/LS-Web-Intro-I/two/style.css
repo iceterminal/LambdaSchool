@@ -1,6 +1,5 @@
 body {
-	background: yellow;
-	margin: auto;
+	background: black;
 }
 .red {
 	background: red;
@@ -11,32 +10,29 @@ body {
 .blue {
 	background: blue;
 	height: 700px;
-	width: 33%;
+	width: 33.33%;
 	float: left;
-    width: 33%;
 }
 .purple {
 	background: purple;
 	height: 700px;
-	width: 33%;
-	display: inline-block;
+	width: 33.33%;
+	float: left;
     margin: 0 auto;
-    width: 33%;
 }
 .yellow {
 	background: yellow;
 	height: 700px;
-	width: 33%;
-	float: right;
-    width: 33%;
+	width: 33.33%;
+	float: left;
 }
 .green {
 	background: green;
+	clear: both;
 	height: 125px;
 	width: 100%;
-	margin: 0 auto;
 }
 
-#container {
+.container {
     width:100%;
 }
