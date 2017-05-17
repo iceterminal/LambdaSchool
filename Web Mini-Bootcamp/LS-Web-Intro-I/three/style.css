@@ -1,0 +1,34 @@
+body {
+	background: white;
+}
+.top {
+	background: purple;
+	height: 125px;
+	width: 100%;
+	margin: auto;
+}
+.red {
+	background: red;
+	height: 800px;
+	width: 75%;
+	margin: auto;
+}
+
+.blue {
+	background: blue;
+	height: 300px;
+	width: 50%;
+	margin: auto;
+}
+.yellow {
+	background: yellow;
+	height: 100px;
+	width: 33.33%;
+	float: left;
+}
+.green {
+	background: green;
+	float: left;
+	height: 150px;
+	width: 100%;
+}
