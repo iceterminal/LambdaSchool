@@ -23,12 +23,12 @@ body {
 .yellow {
 	background: yellow;
 	height: 100px;
-	width: 33.33%;
+	width: 100px;
 	float: left;
 }
 .green {
 	background: green;
-	float: left;
 	height: 150px;
-	width: 100%;
+	width: 40%;
+	float: left;
 }
