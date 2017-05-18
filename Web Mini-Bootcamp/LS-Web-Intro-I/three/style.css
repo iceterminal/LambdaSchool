@@ -10,25 +10,29 @@ body {
 .red {
 	background: red;
 	height: 800px;
-	width: 75%;
+	width: 750px;
 	margin: auto;
+	padding: 40px;
 }
 
 .blue {
 	background: blue;
 	height: 300px;
-	width: 50%;
+	width: 500px;
 	margin: auto;
+	padding: 40px 40px 40px 40px;
 }
 .yellow {
+	margin-right: 30px;
 	background: yellow;
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	float: left;
 }
 .green {
+	display: inline-block;
 	background: green;
-	height: 150px;
-	width: 40%;
+	height: 225px;
+	width: 300px;
 	float: left;
 }
