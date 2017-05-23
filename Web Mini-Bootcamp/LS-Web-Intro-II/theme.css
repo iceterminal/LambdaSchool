@@ -1,7 +1,6 @@
 body {
 	background-color: smoke;
-	padding-top: 220px;
-
+	/*padding-top: 220px;*/
 }
 .navimage {
 	background-image: url("navback.jpg");
@@ -11,14 +10,6 @@ body {
 .navtext {
 	color: white;
 	font-size: 32px;
-}
-
-p {
-	width: 65%;
-	background-color: white;
-	text-align: left;
-	margin: auto;
-	padding: 10px 10px 10px 10px;
 }
 
 .damage {
@@ -31,4 +22,9 @@ p {
 .navbar-fixed-top{
 	color: white;
 
+}
+blockquote {
+  color: #777777;
+  font-style: italic;
+ 	font-size: 15px;
 }
