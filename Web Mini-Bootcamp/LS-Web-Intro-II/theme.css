@@ -1,0 +1,34 @@
+body {
+	background-color: smoke;
+	padding-top: 220px;
+
+}
+.navimage {
+	background-image: url("navback.jpg");
+	height: 215px;
+}
+
+.navtext {
+	color: white;
+	font-size: 32px;
+}
+
+p {
+	width: 65%;
+	background-color: white;
+	text-align: left;
+	margin: auto;
+	padding: 10px 10px 10px 10px;
+}
+
+.damage {
+	background-image: url("damage.jpg");
+	height: 400px;
+	width: 400px;
+	border: 1px solid black;
+}
+
+.navbar-fixed-top{
+	color: white;
+
+}
