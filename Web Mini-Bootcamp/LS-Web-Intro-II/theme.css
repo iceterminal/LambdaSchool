@@ -17,8 +17,8 @@
 
 .top{
   color: white;
-  padding-right:50px;
-  padding-left: 50px;
+  padding-right: 50px;
+  padding-left: 300px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -148,3 +148,4 @@
   font-size: 13px;
   text-align: center;
 }
+
