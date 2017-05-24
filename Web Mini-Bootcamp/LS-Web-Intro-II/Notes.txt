@@ -7,6 +7,7 @@ May 19th, 2017
 Bootstrap
 
 Most .html files have the following as a standard template
+
 <!DOCTYPE html>
 <html>
 	<head> <title>title</title>	</head>
@@ -16,19 +17,24 @@ Most .html files have the following as a standard template
 "navbar" class is normally the top main bar across the top of the screen that will have like navigation buttons, a background image, links, etc.
 	is created in css file i.e. .navbar  and is associated in html file by <div class="navbar">
 
-margin = puts space around the outside of the container. i.e margin: 10px; would put a 10pix space around the div container
-padding = puts space around the inside of the container border. padding: 10px; would put a 10px space on the inside of the container
+margin = applies to space on the OUTSIDE of the container. i.e margin: 10px; would put a 10pix space around the div container
+padding = applies to space on the INSIDE of the container border. padding: 10px; would put a 10px space on the inside of the container
+
 float = is kind of like telling the container which side to start from.
 	float: right; means that the div container would be on the right side of the screen, and the second container would be next to that.
 	float: left; means the div would start on the left side of the screen.
 	Use float to list containers on the same horizontal line instead of vertical
 
 https://getbootstrap.com
+
 Once you install the bootstrap css in the html page, you can add the bootstrap css functions to your css file as needed.
 Put the bootstrap link in the <head> tag
+
 You can install bootstrap on the server, or use a CDN link which links to the bootstrap site and loads it from there dynamically. 
 	<link rel="stylesheet" href="https://......." 
+
 If using bootstrap css and you want to change a setting, you create a custom css file and use the same class name but with the different setting, such as border or color.
+
 Can have multiple links to different css files in the header.
 
 Can utilize multiple classes per container. i.e. <div class="one two three">
