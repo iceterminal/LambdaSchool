@@ -1,0 +1,7 @@
+notes.txt
+LambdaSchool Web Mini-Bootcamp 
+HTML / CSS / JavaScript
+May 22nd, 2017
+
+-Week 2 / Lesson 1-
+
