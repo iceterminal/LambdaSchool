@@ -1,9 +1,13 @@
+body {
+	margin: 0;
+}
+
 .navback {
 	background-image: url("navback.jpg");
 	height: 215px;
 	width: 100%;
-	text-decoration: none;
-
+	
+	position: fixed;
 }
 
 .navback-left {
@@ -49,6 +53,7 @@
 .text {
 	width: 65%;
 	margin: auto;
+	padding-top: 220px;
 }
 
 .damage {
