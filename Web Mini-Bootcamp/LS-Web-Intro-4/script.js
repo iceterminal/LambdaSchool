@@ -17,7 +17,7 @@ var el = document.createElement('img');
 el.setAttribute("src", "https://avatars0.githubusercontent.com/u/17530449");
 document.body.appendChild(el);
 
-//Iterate through each li and changes the class to "listitem".
+//Iterate through each li and change the class to "listitem".
 //Adds a style tag that sets a rule for "listitem" to make the color red
 document.getElementById('nickname').className = 'listItem';
 document.getElementById('favorite').className = 'listItem';
