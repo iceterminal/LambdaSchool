@@ -55,18 +55,20 @@ counter = counter + 1;
 
 A FOR loop fixes this
 
-for(var i = 1; i < 10; i++);
+for(var i = 1; i < 10; i++); {
 // for(var i = 1; i < 10; i+= 2);  this will add 2 to each iteration
 	document.write(i);
 	document.write(i + "<br />");
+}
 
 // for(start;stop;how we get there){
 //			do this each time
 // }
 
-for(var i = 100; i > 3; i--);
+for(var i = 100; i > 3; i--) {
 // for(var i = 100; i >= 32; i-=5);
 	document.write(i + "<br />");
+}
 
 // start with one
 // skip a line and then keep adding as many as our interator
