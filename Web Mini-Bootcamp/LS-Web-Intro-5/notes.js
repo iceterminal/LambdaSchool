@@ -1,3 +1,10 @@
+LambdaSchool Mini Bootcamp (second edition)
+HTML / CSS / JavaScript
+May 29th, 2017
+
+-Week 3 / Lesson 1-
+
+
 in javascript console.log will print this thing to the console (ie. chrome inspect console tab)
 console.log(5); will print 5 in the console
 console.log(40 / 2); will print out 20
@@ -76,7 +83,7 @@ for(var i = 100; i > 3; i--) {
 
 var someNumber = 8; // var someNumber = 800 % 3
 var line = "";
-for( var i = 0; i <= someNumber; i++) {
+for(var i = 0; i <= someNumber; i++) {
 	// print someNumber of #'s
 	// then skip a line
 	document.write(line);
