@@ -1,3 +1,5 @@
+# LESSON 6 HOMEWORK COMPLETED
+
 # Homework #1
 
 ## Instructions
