@@ -7,9 +7,15 @@
 1. Feynman Writing Prompts - Write out explanations of the following concepts like you are explaining it to a 12 year old.  Doing this will help you quickly discover any holes in your understanding.  Ask your questions on Slack.
 		
 	* Functions
+		-	A way to save a portion or block of code that can be called at any time later on in the program.
 	* Parameters
+		-	This is the data that is listed in the code of the function block (like the function variables)
 	* Arguments
+		-	These are the items/data given in the function call itself. When it is invoked, the arguments are 
+			entered to be passed onto the function. This data will be entered in as the parameter variable.
 	* `if` statements
+		-	This is a conditional statement. Meaning "if this is that, then do this. Else do that." It checks
+			to see 'if' something is true or not.
 
 
 2. Install Node and NPM.  NPM comes packaged with Node. https://nodejs.org/en/download/
