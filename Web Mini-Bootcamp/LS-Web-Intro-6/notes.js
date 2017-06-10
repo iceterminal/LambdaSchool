@@ -1,7 +1,13 @@
-notes.js
+LambdaSchool Mini Bootcamp (second edition)
+HTML / CSS / JavaScript
+June 5th, 2017
+
+-Week 3 / Lesson 2-
 
 prompt("Hello")
+
 alert("hello") //will pop open a window saying "Hello" on the browser
+
 return num * 10; //will return the answer to the screen (CLI)
 
 function can be called any time. 

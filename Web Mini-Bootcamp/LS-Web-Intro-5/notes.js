@@ -1,6 +1,6 @@
 LambdaSchool Mini Bootcamp (second edition)
 HTML / CSS / JavaScript
-May 29th, 2017
+June 2nd, 2017
 
 -Week 3 / Lesson 1-
 
