@@ -14,18 +14,27 @@ document.getElementById("hometown").innerHTML = "Indiana (shut it clown)"
 
 //Creates a new img element and set its src attribute to a picture. Appends this element to page.
 var image = document.createElement('img');
-image.setAttribute("src", "https://avatars0.githubusercontent.com/u/17530449");
+//image.setAttribute("src", "https://avatars0.githubusercontent.com/u/17530449");
+image.src = 'https://avatars0.githubusercontent.com/u/17530449';
 document.body.appendChild(image);
 
 //Iterate through each li and change the class to "listitem".
 //Adds a style tag that sets a rule for "listitem" to make the color red
-for (i = 0; i < 3; i++) {
-	document.getElementsByTagName('li')[i].className = 'listItem';
-	document.getElementsByTagName('li')[i].style.color = 'red';
-	document.getElementsByTagName('li')[i].style.background = 'salmon';
+
+// for (i = 0; i < 3; i++) {
+// 	document.getElementsByTagName('li')[i].className = 'listItem';
+// 	document.getElementsByTagName('li')[i].style.color = 'red';
+// 	document.getElementsByTagName('li')[i].style.background = 'salmon';
+// }
+var item = document.getElementsByTagName("li");
+for(var i = 0; i<= item.length; i++){
+  item[i].className = "listitem";
+  item[i].style.color = "red";
+  item[i].style.backgroundColor = "salmon";
 }
 
 //document.getElementById('nickname').className = 'listItem';
 //document.getElementById('favorites').className = 'listItem';
 //document.getElementById('hometown').className = 'listItem';
 //document.querySelector('li').style.color = 'red';  ## this way will only change the first instance of 'li'
+
