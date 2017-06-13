@@ -257,7 +257,7 @@ function verifyPassword(user, password) {
   //check to see if the provided password matches the password property on the user object
   //return true if they match
   //otherwise return false
-  if (user[password] === 'password') {
+  if (user['password'] === password) {
     return true;
   } else {
     return false;
@@ -275,8 +275,8 @@ function addFriend(user, newFriend) {
   //user has a property called friends that is an array
   //add newFriend to the end of the friends array
   //return the user object
-  friends.push(newFriend);
-  return friends;
+  user['friends'].push(newFriend);
+  return user;
 }
 
 function setUsersToPremium(users) {
@@ -284,7 +284,9 @@ function setUsersToPremium(users) {
   //each user object has the property 'isPremium'
   //set each user's isPremium property to true
   //return the users array
-
+  for (var i = 0; i < users.length; i++) {
+    users[i].isPremium = true;
+  } return users;
 }
 
 function sumUserPostLikes(user) {
@@ -293,7 +295,10 @@ function sumUserPostLikes(user) {
   //each post object has an integer property called 'likes'
   //sum together the likes from all the post objects
   //return the sum
-
+  var sum = 0;
+  for (var i = 0; i < user.posts.length; i++) {
+    sum += user.posts[i].likes;
+  } return sum;
 }
 
 function addCalculateDiscountPriceMethod(storeItem) {
@@ -304,8 +309,21 @@ function addCalculateDiscountPriceMethod(storeItem) {
   //price -> 20
   //discountPercentage -> .2
   //discountPrice = 20 - (20 * .2)
-
+  storeItem['calculateDiscountPrice'] = function () {
+    var discountPrice = storeItem.price - (storeItem.price * storeItem.discountPercentage);
+    return discountPrice;
+  }; return storeItem;
 }
+
+
+// person = {
+//   firstName: "David",
+//   lastName: "Bach",
+//   age: 50
+//   shoeSize: 8.5,
+//   fullName: function() {return this.firstName + ' ' + this.lastName}
+// }
+
 
 
 //Do not modify code below this line.
