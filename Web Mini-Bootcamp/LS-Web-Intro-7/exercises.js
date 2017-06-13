@@ -316,16 +316,6 @@ function addCalculateDiscountPriceMethod(storeItem) {
 }
 
 
-// person = {
-//   firstName: "David",
-//   lastName: "Bach",
-//   age: 50
-//   shoeSize: 8.5,
-//   fullName: function() {return this.firstName + ' ' + this.lastName}
-// }
-
-
-
 //Do not modify code below this line.
 ////--------------------------------
 
