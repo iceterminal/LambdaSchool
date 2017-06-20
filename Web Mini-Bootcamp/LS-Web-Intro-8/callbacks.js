@@ -20,11 +20,20 @@
 
 var foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 
+function firstItem(arr, cb) {
+  cb(arr[0]);
+};
+
 firstItem(foods, (firstItem) => {
   console.log('The first item is ' + firstItem);
 });
 
+
+
 // Write a function called getLength that passes the length of the array into the callback
+function getLength (arr, cb) {
+	cb(arr[arr.length]);
+};
 
 getLength(foods, (length) => {
   console.log('The length of the array is ' + length);
